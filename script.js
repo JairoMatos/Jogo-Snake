@@ -69,7 +69,7 @@ document.addEventListener('keydown', (e)=>{
     }
 }) 
 
-setInterval(jogo, 100);
+setInterval(jogo, 200);
 }//fim onload
 
 const jogo = () =>{
