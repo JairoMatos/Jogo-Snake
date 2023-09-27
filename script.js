@@ -117,7 +117,7 @@ const jogo = () =>{
         tam++
         foodX = Math.floor(Math.random()*20)
         foodY = Math.floor(Math.random()*20)
-        score.innerHTML = `SCORE: ${tam}` 
+        score.innerHTML = `SCORE: ${tam-2}` 
     } 
     if(posX < 0 ){  
         posX = 20; 
