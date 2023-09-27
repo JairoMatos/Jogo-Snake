@@ -1,7 +1,7 @@
 .container{
     display: flex;
     flex-direction: column;
-   
+    height: 100%;
     padding: 5px;
     border: 3px inset red;
 
@@ -81,4 +81,5 @@
     margin-top: 5px;
     border-radius: 10px;
     z-index: 0;
+    height: 180px;
 }
