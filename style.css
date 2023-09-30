@@ -1,18 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+height: 100vh;
+  background-image: url('./grama.jpg'); 
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
 .container{
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 5px;
-    border: 3px inset red;
-
     
     
 }
 #score{
-    border: 3px inset red;
+    border-bottom: 3px double rgb(43, 29, 31);
     border-radius: 5px;
-    padding: 3px;
-    margin-bottom: 10px;
+    padding: 10px; 
+    
+    color: rgb(43, 29, 31)
 }
 .comandos{
    
@@ -36,7 +47,7 @@
     position: absolute;
     transition: .2s;
     background-color: rgb(128, 127, 132);
-    opacity: 1;
+    border: 1px inset red;
 }
 #left{
     left: -20;
@@ -56,6 +67,7 @@
    box-shadow: 5px 5px  2px rgb(72, 72, 75) inset;
    border-bottom-right-radius: 10px;
    border-bottom-left-radius: 10px;
+   
 
 }
 #right{
@@ -75,11 +87,11 @@
     border-top-left-radius: 10px;
 }
 .c{
-    background-image: url(./cobra.jpg);
-    background-size: cover;
-    background-position: bottom;
-    margin-top: 5px;
-    border-radius: 10px;
-    z-index: 0;
-    height: 180px;
+    border-top: 3px double rgb(43, 29, 31);
+    margin: 0px 0px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    
+   
 }
