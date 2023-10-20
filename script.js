@@ -23,7 +23,7 @@ velY = 0;
 grid = (canvas.width/100)*5
 //tamanho inicial da cobra
 tam = 5; 
-
+velocidade = 300
 //comando botao virtual
 left.addEventListener('click', ()=>{
     velX = -1;
@@ -64,16 +64,20 @@ document.addEventListener('keydown', (e)=>{
     }
 }) 
 
-//funcao chamando jogo a cada 100ms
-setInterval(jogo, 200);
 
+//funcao chamando jogo a cada 100ms
 
 }//fim onload
- 
-//funcao do game
+
+///
+const velcobra = (tam) => {
+    console.log(tam)
+}
+///
+
 const jogo = () =>{
     let tmScore = 0
- 
+velocidade = 500
     //configuracao da tela
     
     ctx.fillStyle = '#E6E6FA';
@@ -110,9 +114,11 @@ const jogo = () =>{
     //configuracao da comida
     if(posX == foodX && posY == foodY){
         tam++
+        velcobra(tam)
         foodX = Math.floor(Math.random()*20)
         foodY = Math.floor(Math.random()*20)
         score.innerHTML = `SCORE: ${tam-2}` 
+       
     } 
     //configurando saida da cobra na tela
 
@@ -126,5 +132,10 @@ const jogo = () =>{
     }else if(posY > 20){
         posY = 0
     }
-    
+
 } 
+
+
+setInterval(jogo, 300);
+
+velcobra(10)

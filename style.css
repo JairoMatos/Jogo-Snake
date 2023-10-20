@@ -4,11 +4,11 @@
 
 }
 body{
-height: 100vh;
-  background-image: url('./grama.jpg'); 
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+    height: 100vh;
+    background-image: url('./bg01.jpeg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   
 }
 .container{
@@ -19,11 +19,10 @@ height: 100vh;
     
 }
 #score{
-    border-bottom: 3px double rgb(43, 29, 31);
-    border-radius: 5px;
+   
     padding: 10px; 
-    
-    color: rgb(43, 29, 31)
+    font-size: 20px;font-family: sans-serif;
+    color: #fff
 }
 .comandos{
    
@@ -46,8 +45,8 @@ height: 100vh;
     border: none;
     position: absolute;
     transition: .2s;
-    background-color: rgb(128, 127, 132);
-    border: 1px inset red;
+    background-color: rgb(17, 31, 120);
+    border: 1px inset rgb(231, 61, 17)
 }
 #left{
     left: -20;
@@ -87,9 +86,9 @@ height: 100vh;
     border-top-left-radius: 10px;
 }
 .c{
-    border-top: 3px double rgb(43, 29, 31);
+    border-top: 1px double rgb(43, 29, 31);
     margin: 0px 0px;
-    height: 300px;
+    height: 30%;
     display: flex;
     align-items: center;
     
